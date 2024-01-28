@@ -42,13 +42,13 @@ while (have_posts()) {
 
 						<div class="entry-meta">
 
-							<?php understrap_posted_on();?>
+							<?php // understrap_posted_on();?>
 
 						</div><!-- .entry-meta -->
 
 					</header><!-- .entry-header -->
 
-					<?php echo get_the_post_thumbnail($post->ID, 'large'); ?>
+					<?php echo get_the_post_thumbnail($post->ID, 'large', array('class' => 'mb-2')); ?>
 
 					<div class="entry-content">
 
@@ -80,7 +80,7 @@ understrap_post_nav();
 
 	// If comments are open or we have at least one comment, load up the comment template.
 	if (comments_open() || get_comments_number()) {
-		comments_template();
+		//	comments_template();
 	}
 }
 ?>

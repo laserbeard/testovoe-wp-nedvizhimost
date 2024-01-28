@@ -159,18 +159,18 @@ function cw_post_type_cities() {
 		'post-formats', // post formats
 	);
 	$labels = array(
-		'name' => _x('Города', 'plural'),
-		'singular_name' => _x('Города', 'singular'),
-		'menu_name' => _x('Города', 'admin menu'),
-		'name_admin_bar' => _x('Города', 'admin bar'),
-		'add_new' => _x('Add New', 'add new'),
-		'add_new_item' => __('Add New cities'),
-		'new_item' => __('New cities'),
-		'edit_item' => __('Edit cities'),
-		'view_item' => __('View cities'),
-		'all_items' => __('All cities'),
-		'search_items' => __('Search cities'),
-		'not_found' => __('No cities found.'),
+		'name' => _x('Город', 'plural'),
+		'singular_name' => _x('Город', 'singular'),
+		'menu_name' => _x('Город', 'admin menu'),
+		'name_admin_bar' => _x('Город', 'admin bar'),
+		'add_new' => _x('Добавить Новый', 'add new'),
+		'add_new_item' => __('Добавить Новый город'),
+		'new_item' => __('Новый город'),
+		'edit_item' => __('Редактровать город'),
+		'view_item' => __('Смотреть город'),
+		'all_items' => __('Все города'),
+		'search_items' => __('Искать город'),
+		'not_found' => __('Город не найден.'),
 	);
 	$args = array(
 		'supports' => $supports,

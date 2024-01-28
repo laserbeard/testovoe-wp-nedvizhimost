@@ -39,13 +39,13 @@ while (have_posts()) {
 
 						<div class="entry-meta">
 
-							<?php understrap_posted_on();?>
+							<?php // understrap_posted_on();?>
 
 						</div><!-- .entry-meta -->
 
 					</header><!-- .entry-header -->
 
-					<?php echo get_the_post_thumbnail($post->ID, 'large'); ?>
+					<?php echo get_the_post_thumbnail($post->ID, 'large', array('class' => 'mb-2')); ?>
 
 					<div class="entry-content">
 
@@ -55,26 +55,26 @@ the_content();
 	?>
 
 					<?php if (get_field('ploshhad')): ?>
-				    <p>Площадь: <?php the_field('ploshhad');?> м²</p>
+				    <p><b>Площадь:</b> <?php the_field('ploshhad');?> м²</p>
 					<?php endif;?>
 
 					<?php if (get_field('stoimost')): ?>
-				    <p>Стоимость: <?php the_field('stoimost');?> ₽</p>
+				    <p><b>Стоимость:</b> <?php the_field('stoimost');?> ₽</p>
 					<?php endif;?>
 
 
 					<?php if (get_field('adres')): ?>
-				    <p>Адрес: <?php the_field('adres');?></p>
+				    <p><b>Адрес:</b> <?php the_field('adres');?></p>
 					<?php endif;?>
 
 
 					<?php if (get_field('zhilaya_ploshhad')): ?>
-				    <p>Жилая площадь: <?php the_field('zhilaya_ploshhad');?> м²</p>
+				    <p><b>Жилая площадь:</b> <?php the_field('zhilaya_ploshhad');?> м²</p>
 					<?php endif;?>
 
 
 					<?php if (get_field('etazh')): ?>
-				    <p>Этаж: <?php the_field('etazh');?></p>
+				    <p><b>Этаж:</b> <?php the_field('etazh');?></p>
 					<?php endif;?>
 
 
@@ -94,7 +94,7 @@ understrap_post_nav();
 
 	// If comments are open or we have at least one comment, load up the comment template.
 	if (comments_open() || get_comments_number()) {
-		comments_template();
+		// comments_template();
 	}
 }
 ?>
